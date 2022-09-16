@@ -55,23 +55,55 @@
 // }
 
 //7
-let m = 3;
-let n = 14;
-let i = 2;
+// let m = 3;
+// let n = 14;
+// let i = 2;
 
-for ( j = m; j < n; j+=i) {
-    console.log(j);
+// for ( j = m; j < n; j+=i) {
+//     console.log(j);
+// }
+
+/*8 
+templete string ou concatenação
+*/
+const prompt = require('prompt-sync')();
+let n = 5;
+let maior = 0;
+let menor = 9999;
+
+for (i = 1; i <= n; i++) {
+    let valor = parseInt(prompt(`digite o ${i}º: `))
+    if (valor > maior) {
+        maior = valor
+    }
+    // console.log(`maior = ${maior}`)
+    if (valor < menor) {
+        menor = valor
+    }
+    // console.log(`menor = ${menor}`)
+}
+console.log(`maior = ${maior},menor = ${menor}`)
+
+9
+let N = 4;
+let maior1 = 0;
+let maior2 = 0;
+let maior3 = 0;
+// 4 6 5 1
+for (i = 1; i <= N; i++) {
+    let valor = parseInt(prompt(`digite o valor ${i}º: `))
+    if (valor > maior1) {
+        maior2 = maior1
+        maior1 = valor 
+
+    }else if (valor > maior2) {
+        maior2 = valor 
+    }
+    console.log(`1 maior = ${maior}, 2 maior = ${maior2}`)
 }
 
-//8
-// let n = 10;
-// const min= Math.min();
+//10
 
-// for (i = 0; i < n; i++) {
-//     console.log(i)
-//     Math.min([i])
-//     console.log(min)
-// }
 
 
 

@@ -216,3 +216,101 @@ descobrir maior media e nome aluno
 //         alunoMaiorMedia = nomeAluno        
 //     }
 // } console.log(`maior media: ${maiorMedia} ,nome do aluno: ${alunoMaiorMedia}`)
+
+/* 
+17.  
+nome=
+media=
+parar aluno fim
+media todos alunos e numero de alunos informados a media
+*/
+// let nomeAluno= "";
+// let mediaAluno=0;
+// let count= 0;
+// //let somaMediaAlunos= (nota1 + nota2 + nota3)/3
+// let somaMediaAlunos= 0
+
+// while(nomeAluno != 'fim'){
+//     nomeAluno= prompt("digite nome do aluno: ");
+//     if(nomeAluno === "fim"){
+//         break
+//     }
+//     mediaAluno = parseInt(prompt("digite á media: "));
+//     somaMediaAlunos += mediaAluno
+//     count++
+// console.log(`${somaMediaAlunos} -> ${count}`)
+// }console.log(`media de todos os alunos: ${somaMediaAlunos / count},
+//  quantidade de alunos que informaram a media: ${count}`)
+
+/* 
+18.
+1polegada = 2,54cm
+*/
+// let polegadasEmCm = 0;
+// for(i=1; i <= 20; i++){
+//     console.log(i)
+//     polegadasEmCm = i* 2.54;
+//     console.log(parseFloat(polegadasEmCm))
+// }
+//19
+
+// let tabu = 0;
+// let numero= 5;
+// for(i=1; i <= 10; i++){
+//     tabu = i* numero;
+//     console.log(parseFloat(tabu))
+// }
+
+//20
+// let n= parseInt(prompt("digite á media: "));
+// 4=2   9=3 16=4 25=5, 36=6  49=7  33=5,75
+
+// let quadrado = n ** (1 / 2);
+// let n = 1;
+
+// while (n != 0) {
+//     n= parseInt(prompt("digite um numero: "));
+//     console.log(`valor ${n}`)
+//     n = n ** (1 / 2);
+//     if(n === 0){
+//         break
+//     }
+//     if (n % 1 === 0) {
+//     console.log(`valor quadrado inteiro ${n}`)
+//     }
+//     else{
+//     console.log(`valor quadrado quebrado ${n}`)
+//     } 
+// }
+
+//21 primo
+// let p = 0;
+// while (p >= 0) {
+//     p = parseInt(prompt("digite um numero: "));
+
+//     if (p % 2 == 0) {
+//         console.log(`numero não é primo: ${p}`)
+//     }
+
+//     else if (p % 1 === 0 && p % p === 0) {
+//         console.log(`numero é primo: ${p}`)
+//     }
+
+// }
+//22
+// let dividendo = 20;
+// let divisor = 5;
+// let quociente = 0;
+// let x = dividendo;
+// while (x >= divisor){
+//     x = x - divisor
+//     quociente = quociente + 1
+//     resto = x
+// console.log(`${dividendo / divisor} = ${quociente} (quociente) ${resto} (resto)`)
+// }
+
+//23
+
+
+//24
+

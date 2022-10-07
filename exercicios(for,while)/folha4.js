@@ -1,21 +1,23 @@
-// ENQUANTO
-
-//1
+// while -> ENQUANTO
+// For   -> PARA
+// exercicio 1 
 // let count = 0;
+
+const { number } = require('prop-types');
 
 // while (count <= 40) {
 //     console.log(count++);
 //     // count = count + 1;
 // }
 
-//2
+//exercicio 2
 // let n1= 0;
 // while (n1 <= 5){
 //     console.log(n1);
 //     n1= n1 + 1;
 // }
 
-//3 ( 5 -> 6, 7, 8, 9)
+//exercicio 3 
 const prompt = require('prompt-sync')();
 
 // let m= prompt('digite um numero: ');
@@ -25,7 +27,7 @@ const prompt = require('prompt-sync')();
 //     console.log(m++);
 // }
 
-//4
+//exercicio 4
 // let m = 5;
 // let n = 30;
 
@@ -35,7 +37,7 @@ const prompt = require('prompt-sync')();
 //     }
 // }
 
-//5
+//exercicio 5
 // let m = 4;
 // let n = 14;
 // let count = 0;
@@ -47,7 +49,7 @@ const prompt = require('prompt-sync')();
 //             }
 // } console.log(count)
 
-//6
+//exercicio 6
 // let m = 3;
 // let n = 14;
 
@@ -57,7 +59,7 @@ const prompt = require('prompt-sync')();
 //     }
 // }
 
-//7
+//exercicio 7
 // let m = 3;
 // let n = 14;
 // let i = 2;
@@ -66,7 +68,7 @@ const prompt = require('prompt-sync')();
 //     console.log(j);
 // }
 
-/*8 
+/*exercicio 8 
 templete string ou concatenação
 */
 
@@ -87,12 +89,12 @@ templete string ou concatenação
 // }
 // console.log(`maior = ${maior},menor = ${menor}`)
 
-// 9
+// exercicio 9
 // let N = 4;
 // let maior1 = 0;
 // let maior2 = 0;
 // let maior3 = 0;
-// 4 6 5 1
+// 
 // for (i = 1; i <= N; i++) {
 //     let valor = parseInt(prompt(`digite o valor ${i}º: `))
 //     if (valor > maior1) {
@@ -117,7 +119,7 @@ templete string ou concatenação
 // }
 // }
 
-// 11
+// exercicio 11
 // let V = 0;
 // let count = 0;
 
@@ -128,7 +130,7 @@ templete string ou concatenação
 //     console.log(V);
 // }console.log(count);
 
-// 12
+// exercicio 12
 // let v = 0;
 // let valores= 0;
 
@@ -141,7 +143,7 @@ templete string ou concatenação
 
 // }
 
-// 13
+// exercicio 13
 // let v = 0;
 
 
@@ -156,7 +158,7 @@ templete string ou concatenação
 //     }
 // }
 
-//14- (10, 20,    6, 24   -1)
+//exercicio 14 - (10, 20,    6, 24   -1)
 // let v = 0;
 
 // while(v > -1){
@@ -170,14 +172,14 @@ templete string ou concatenação
 //     }
 // }
 
-/*15 quantidade de pares. quantidade de impar
+/*exercicio 15 
+quantidade de pares. quantidade de impar
 media pares, media geral dos numeros
 encerra com 0
 */
 // let num = 5;
 // let count= 0;
 // let count1= 0;
-
 
 // for(i=1; i < num; i++){
 //     numeros = parseInt(prompt("digite um valor: "));
@@ -196,8 +198,8 @@ encerra com 0
 // console.log( 'quantidade de numeros impares digitados', count1)
 // console.log('quantidade de numeros pares digitados', count)
 
-/* 16. 
-3 alunos
+/* exercicio 16. 
+10 alunos
 numero de medias = ?
 nome aluno = ?
 descobrir maior media e nome aluno
@@ -207,7 +209,7 @@ descobrir maior media e nome aluno
 // let maiorMedia = 0;
 // let alunoMaiorMedia= "";
 
-// let turma = 3;
+// let turma = 10;
 // for (i = 0; i < turma; i++) {
 //     nomeAluno = prompt("digite nome do aluno: ");
 //     mediaAluno = parseInt(prompt("digite á media: "));
@@ -218,9 +220,9 @@ descobrir maior media e nome aluno
 // } console.log(`maior media: ${maiorMedia} ,nome do aluno: ${alunoMaiorMedia}`)
 
 /* 
-17.  
-nome=
-media=
+exercicio 17.  
+nome= ?
+media=?
 parar aluno fim
 media todos alunos e numero de alunos informados a media
 */
@@ -243,7 +245,7 @@ media todos alunos e numero de alunos informados a media
 //  quantidade de alunos que informaram a media: ${count}`)
 
 /* 
-18.
+exercicio 18.
 1polegada = 2,54cm
 */
 // let polegadasEmCm = 0;
@@ -252,16 +254,16 @@ media todos alunos e numero de alunos informados a media
 //     polegadasEmCm = i* 2.54;
 //     console.log(parseFloat(polegadasEmCm))
 // }
-//19
+//exercicio 19
 
-// let tabu = 0;
+// let multiblicacao = 0;
 // let numero= 5;
 // for(i=1; i <= 10; i++){
-//     tabu = i* numero;
-//     console.log(parseFloat(tabu))
+//     multiplicacao = i* numero;
+//     console.log(parseFloat(multiplicacao))
 // }
 
-//20
+//exercicio 20
 // let n= parseInt(prompt("digite á media: "));
 // 4=2   9=3 16=4 25=5, 36=6  49=7  33=5,75
 
@@ -283,21 +285,19 @@ media todos alunos e numero de alunos informados a media
 //     } 
 // }
 
-//21 primo
-// let p = 0;
-// while (p >= 0) {
-//     p = parseInt(prompt("digite um numero: "));
+//exercicio 21 - primos
+let p = 0;
+while (p >= 0) {
+    p = parseInt(prompt("digite um numero: "));
+    if (p % 2 == 0) {
+        console.log(`numero não é primo: ${p}`)
+    }
+    else if (p % 1 === 0 && p % p === 0) {
+        console.log(`numero é primo: ${p}`)
+    }
+}
 
-//     if (p % 2 == 0) {
-//         console.log(`numero não é primo: ${p}`)
-//     }
-
-//     else if (p % 1 === 0 && p % p === 0) {
-//         console.log(`numero é primo: ${p}`)
-//     }
-
-// }
-//22
+//exercicio 22
 // let dividendo = 20;
 // let divisor = 5;
 // let quociente = 0;
@@ -309,8 +309,201 @@ media todos alunos e numero de alunos informados a media
 // console.log(`${dividendo / divisor} = ${quociente} (quociente) ${resto} (resto)`)
 // }
 
-//23
+/*exercicio 23  
+16 - 4
+
+16 - 1 - 1
+15 - 3 - 2
+12 - 5 - 3
+7  - 7 - 4
+0
+*/
+// 
+let numero=16;
+let count = 0;
+let impar= 1;
+let num= numero;
+
+while(numero > 0){
+    console.log(`${impar}`)    // 1
+    numero -= impar           //numero = numero - impar // 15
+    impar += 2        // 3, 5, 7  // impar = impar + 2
+    count++
+}console.log(`valor raiz quadrada de ${num} é ${count}`)
+
+//exercicio 24 -> não esta imprimindo só 5 valores 
+// digite um numero: 3, digite um numero: -1 -> é negativo, quantidade de numeros negativos 1
+
+// let count = 0; // contar até 5 numeros
+// let a= 0; // ler os numero digitados
+// let countNegativo = 0; // contar os numeros negativos
+
+// while (count < 5) {
+//     count++
+//     a = parseInt(prompt("digite um numero: "));
+//     if (a < 0) {
+//         countNegativo++
+//         console.log(`numero negativo, quantidade de numeros negativos ${countNegativo}`)
+//     }
+// }
+
+/* exercicio 25.
+26.90 por hora
+10 % homem   6% mulher
+termina codigo -11
+codigo é id de funcionarios
+*/
+// const codigoEx = 0;
+// const sexoEx = "feminino"// "masculino e feminino";
+// const horaTrabalhada1 = 6; // 26,90 * 6 =
+// const valorHora1 = 26.90;
+// const salarioLiquido1 = horaTrabalhada1 * valorHora1;  // sem desconto
+// let salarioBruto1 = 0; //salarioLiquido * desconto;// com desconto
+// const media1 = salarioLiquido1 / 1;
+
+// let descMasculino1 = 10 / 100;
+// let descFeminino1 = 6 / 100;
+// // uma funcionaria
+// // if (sexoEx === "feminino") {
+// //     salarioBruto1 = salarioLiquido1 - salarioLiquido1 * descFeminino1
+// // }
+// // console.log(`salario Bruto: ${salarioBruto1.toFixed(2)} 
+// // salario liquido: ${salarioLiquido1.toFixed(2)}
+// // media: ${media1.toFixed(2)}`)
+
+// varios funcionarios usando while
+// let codigo = 0;// codigo dos funcionarios
+// let sexo = "";// "masculino e feminino";
+// const horaTrabalhada = 6; // 26,90 * 6 =
+// const valorHora = 26.90;
+// let salarioLiquido = horaTrabalhada * valorHora;  // sem desconto
+// let salarioBrutoF = 0; //salarioLiquido * desconto;// com desconto
+// let salarioBrutoM = 0;
+// let contador = 0; //quantidade de funcionarios 
+// let contadorF = 0;
+// let contadorM = 0;
+// let descMasculino = 10 / 100;
+// let descFeminino = 6 / 100;
+// let mediaSalarialFuncionariosF = 0;
+// let mediaSalarialFuncionariosM= 0;
+
+// while (codigo !== -11) {
+//     if (codigo === -11) {
+//         break
+//     }
+//     contador++
+//     codigo = parseInt(prompt(`digite o código: `))
+//     sexo = prompt("feminino ou masculino: ")
+
+//     if (sexo === "feminino") {
+//         contadorF ++
+//         mediaSalarialFuncionariosF = salarioLiquido / contadorF
+//         salarioBrutoF = salarioLiquido - salarioLiquido * descFeminino
+        
+//     } if (sexo === "masculino") {
+//         contadorM ++
+//         mediaSalarialFuncionariosM= salarioLiquido / contadorM
+//         salarioBrutoM = salarioLiquido - salarioLiquido * descMasculino
+        
+//     }
+// }
+// console.log(`salario Bruto Feminino: ${salarioBrutoF.toFixed(2)} 
+// salario Bruto Masculino: ${salarioBrutoM.toFixed(2)}
+// salario liquido: ${salarioLiquido.toFixed(2)}
+// funcionários: ${contador}
+// media Salarial Funcionarios Feminino ${mediaSalarialFuncionariosF.toFixed(2)}
+// media Salarial Funcionarios Masculino ${mediaSalarialFuncionariosM.toFixed(2)}`)
+
+//exercicio 26
+// let salario_Habitantes = 0;
+// let contador = 0;
+// let numero_filho = 0;
+// let media_salarial = 0;
+// let habitantes = 0;
+// let media_habitantes = 0;
+// let numeroTotal_filho = 0;
+// let salarioTotal_Habitantes = 0;
+// let maior_salario = 0;
+// let menor100 = 0;
+// let contadorSalario_menor100 = 0;
+// let percentualSalario = 0;
+// let percentualSalario_ate100 =0;
+
+// for (i = 0; i >= 0; i++) {
+//     contador++
+//     let salario_Habitantes = parseInt(prompt(`digite seu salário: `))
+//     if (salario_Habitantes < 0) {
+//         break
+//     }
+//     let numero_filho = parseInt(prompt(`digite quantos filhos tem: `))
+//     numeroTotal_filho += numero_filho       // salarioTotal_Habitantes recebe todos os valores do salario_Habitantes
+//     salarioTotal_Habitantes += salario_Habitantes // salarioTotal_Habitantes recebe todos os valores do salario_Habitantes
+//     media_salarial = salarioTotal_Habitantes / contador
+//     habitantes = numeroTotal_filho + contador
+//     media_habitantes = habitantes / 2
+//     if (salario_Habitantes > maior_salario) {
+//         maior_salario = salario_Habitantes
+//     }
+//     if(salario_Habitantes <= 100){
+//         contadorSalario_menor100 ++
+//         menor100 += salario_Habitantes
+//         percentualSalario = contadorSalario_menor100 * 100
+//         percentualSalario_ate100 =  percentualSalario / contador
+//     }
+
+// }
+
+// console.log(` media do salario: ${media_salarial}
+// media habitantes: ${media_habitantes}
+// quantos adultos recebem salarios até 100 reais: ${contadorSalario_menor100}
+// percentual dos Salarios até 100 reais: ${percentualSalario_ate100}
+// maior salario: ${maior_salario}
+// adultos: ${i} filhos: ${numeroTotal_filho}`)
+
+//exercicio 27    
+//ze cresce 3 chico crece 2 (quantos anos deva ze maior que chico)
+// let chico = 1.50;
+// let ze = 1.10;
+// let count = 0;          //ano
+
+// while (chico > ze) {
+    
+//         ze += 0.03
+//         count++
+//         console.log(ze.toFixed(2), "ze")
+//         chico += 0.02
+//         console.log(chico.toFixed(2), "chico")
+//     if(ze > chico){
+//         break
+//     }
+           
+// }
+// console.log(`em ${count} anos zé sera maior que chico`)
 
 
-//24
+// APRENDENDO CONDICIONAIS
+// BRINCADEIRA MORTO OU VIV0
+// let comando = "vivo"; //morto ou vivi
 
+// if (comando === "morto") {
+//     console.log('criança devem se abaixar')
+// }
+// else if (comando === "vivo") {
+//     console.log('criança fica de pé')
+// }
+// else { console.log("criança fica na mesma posição") }
+
+// // let comando = "morto"; //morto ou vivi
+// switch (comando) {
+//     case 'morto':
+//         console.log('criança devem se abaixar');
+//         break;
+
+//     case 'vivo':
+//         console.log('criança fica de pé');
+//         break;
+
+//     default:
+//         console.log("criança fica na mesma posição")
+
+// }
